@@ -3,15 +3,15 @@
 
 // Define MathOperations namespace
 namespace MathOperations {
-    int add(int a, int b) {
+    int add(int a, int b) {  // function: add to add a and b
         return a + b;
     }
 }
 
 // Define TextOperations namespace
 namespace TextOperations {
-    std::string concat(const std::string& str1, const std::string& str2) {
-        return str1 + str2;
+    std::string concat(const std::string& str1, const std::string& str2) {  // concat to add 2 or more string to one
+        return str1 + str2;  // const: to ensure the object not modify and to enhance efficiency
     }
 }
 
