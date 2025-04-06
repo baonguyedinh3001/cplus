@@ -48,9 +48,9 @@ int main(){
         break;
         case 2 :user_minus_input(a,b);
         break;
-        case 3 :  user_times_input(a,b);
+        case 3 :  user_devide_input(a,b);
         break;
-        case 4 : user_devide_input(a,b);
+        case 4 : user_times_input(a,b);
         
         
         break;
