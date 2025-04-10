@@ -5,7 +5,7 @@
 #include <vector>// as array but can add and remove the element in array
 
 struct student {
-    char name[50] = {" Alice " };
+    char name[50] ;
     int  id;
     unsigned grade;
 };
@@ -45,6 +45,7 @@ void searchStudent(const std::vector<student>& search_student) {
     int student_Id;
     std::cout << "Enter student ID to search: ";
     std::cin >> student_Id;
+   
 
     for (const auto& new_student : search_student) { // Loop through students
         if (new_student.id == student_Id) { // If ID matches
@@ -55,8 +56,8 @@ void searchStudent(const std::vector<student>& search_student) {
         }
         
     }
-
-    std::cout << "Student not found."<<std::endl; // If no match is found
+ //if (!found){
+    //std::cout << "Student not found."<<std::endl;} // If no match is found
 }
 
 int main() {

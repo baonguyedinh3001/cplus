@@ -6,22 +6,18 @@ void swap_value(float a, float b){
     float temp = a;
     a = b;
     b = temp;
-    std::swap(a,b);
-    std::cout<<"swap value a and b is: "<< b<<" and "<<a<<std::endl;
+    
+    std::cout<<"swap value a and b is: "<< a <<" and "<<b<<std::endl;
 }
 void swap_value_pointer(float *a, float *b){
- float temp = *a ;
- *a = *b;
- *b = temp;
-std::swap(*a,*b);
- std::cout<<"swap value a and b is: "<< *b<< " and  "<<*a<<std::endl;
+ 
+    std::swap(*a,*b);
+ std::cout<<"swap value a and b is: "<< *a<< " and  "<<*b<<std::endl;
 }
 void swap_value_reference( float &a, float &b){
-    float temp = a;
-    a = b;
-    b = temp;
+    
     std::swap(a,b);
-    std::cout<<"swap value a and b is: "<<b<<" and "<< a <<std::endl;
+    std::cout<<"swap value a and b is: "<<a<<" and "<< b <<std::endl;
  }
 
 int main(){

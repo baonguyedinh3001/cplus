@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+
 void multiply(int a, int b){
     std::cout<< "result a*b: "<<a*b<<std::endl;
 }
@@ -16,6 +17,13 @@ if (flag){
      std::cout<<"result a*b: "<<std::floor(a*b)<<std::endl;
 }
 }
+
+
+
+
+
+
+
 int main(){
     int a=5, b=6;
     double c=2.5, d=3.5;

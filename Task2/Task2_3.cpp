@@ -35,8 +35,8 @@ int main(){
     
     std::cout<<" 1 for enter + "<<std::endl;
     std::cout<<" 2 for enter - "<<std::endl;
-    std::cout<<" 3 for enter  / "<<std::endl;
-    std::cout<<" 4 for enter  * "<<std::endl;
+    std::cout<<" 3 for enter  * "<<std::endl;
+    std::cout<<" 4 for enter  / "<<std::endl;
     std::cin>>choice;
     std::cout<< "enter a: "<<std::endl;
     std::cin >> a;
@@ -48,9 +48,9 @@ int main(){
         break;
         case 2 :user_minus_input(a,b);
         break;
-        case 3 :  user_devide_input(a,b);
+        case 3 :  user_times_input(a,b);
         break;
-        case 4 : user_times_input(a,b);
+        case 4 : user_devide_input(a,b);
         
         
         break;
