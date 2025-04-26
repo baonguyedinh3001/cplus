@@ -46,18 +46,18 @@ void searchStudent(const std::vector<student>& search_student) {
     std::cout << "Enter student ID to search: ";
     std::cin >> student_Id;
    
-
+    bool found =false;
     for (const auto& new_student : search_student) { // Loop through students
         if (new_student.id == student_Id) { // If ID matches
             std::cout << "Student Found: "<<std::endl;
             std::cout << "ID: " << new_student.id << ", Name: " << new_student.name << ", Grade: " << new_student.grade << std::endl;
-           
+            found = true;
             break; // Exit function after finding
         }
         
     }
- //if (!found){
-    //std::cout << "Student not found."<<std::endl;} // If no match is found
+ if (!found){
+    std::cout << "Student not found."<<std::endl;} // If no match is found
 }
 
 int main() {
